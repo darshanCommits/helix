@@ -2,7 +2,7 @@ repo = "helix-editor/helix"
 remote-branch = "master"
 local-branch = "driver-new"
 pull-requests = [
-  "13600", # paste-join
+  # "13600", # paste-join. has a bug
   "13530", # Rainbow tree-sitter matches
   "13565", # Show filepath context in bufferline
   "13206", # Word completion 
