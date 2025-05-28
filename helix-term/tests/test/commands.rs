@@ -6,6 +6,7 @@ mod insert;
 mod movement;
 mod paste_join;
 mod write;
+mod yank_join;
 
 #[tokio::test(flavor = "multi_thread")]
 async fn search_selection_detect_word_boundaries_at_eof() -> anyhow::Result<()> {
