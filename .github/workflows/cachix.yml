@@ -14,8 +14,8 @@ jobs:
     - name: Checkout sources
       uses: actions/checkout@v4
 
-    - name: Install nix
-      uses: cachix/install-nix-action@v31
+    - name: Install Nix(ummm, akshually Lix)
+      uses: samueldr/lix-gha-installer-action@latest
       with: 
         extra_nix_config: |
           substituters = https://darshancommits.cachix.org
