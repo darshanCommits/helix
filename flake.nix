@@ -2,7 +2,7 @@
   description = "A post-modern text editor.";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
     rust-overlay = {
       url = "github:oxalica/rust-overlay";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -96,7 +96,11 @@
     };
   };
   nixConfig = {
-    extra-substituters = ["https://helix.cachix.org"];
-    extra-trusted-public-keys = ["helix.cachix.org-1:ejp9KQpR1FBI2onstMQ34yogDm4OgU2ru6lIwPvuCVs="];
+    extra-substituters = [
+      "https://darshancommits.cachix.org"
+    ];
+    extra-trusted-public-keys = [
+      "darshancommits.cachix.org-1:aITLC4uLnoX/hHdms6Jfj60BkH9e21DxGPz/IB0YMvw="
+    ];
   };
 }
